@@ -1,0 +1,14 @@
+{
+  "config": {
+    "modules": [
+      {
+        "name": "config",
+        "path": "artifacts/config.wasm",
+        "logger_enabled": true,
+        "mounted_binaries": [["redis", "/usr/bin/redis-cli"]],
+        "mem_page_count": 100,
+        "envs": [["/tmp/vault", "./tmp"]]
+      }
+    ]
+  }
+}
